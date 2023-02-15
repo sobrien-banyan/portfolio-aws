@@ -1,0 +1,29 @@
+.svg {
+  cursor: pointer;
+  }
+
+  .svgwrapper {
+    align-items: center;
+    bottom: 8vh;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .svgcontainer {
+    width: 100%;
+    padding: 0 3%;
+  }
+  
+  @media (max-width: 650px){
+.svgwrapper {
+  bottom: 23vh
+}
+/* .svgcontainer {
+    padding-left: 10%;
+} */
+  }

@@ -1,0 +1,103 @@
+.hooks-main {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .b1,
+  .b2,
+  .b3 {
+    position: absolute;
+    will-change: transform;
+    border-radius: 50%;
+    background: #5f488e;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    opacity: 0.6;
+  }
+
+  .b1-planet,
+  .b2-planet,
+  .b3-planet {
+    position: absolute;
+    will-change: transform;
+    border-radius: 50%;
+    background: #1e201f;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    opacity: 0.6;
+  }
+
+  .b1-safari,
+  .b2-safari,
+  .b3-safari {
+    position: absolute;
+    will-change: transform;
+    border-radius: 50%;
+    background: #1e201f;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background: radial-gradient(circle at center, #eee, #eee 50%, #333 75%, #eee 75%);
+  }
+  
+  .b1,
+  .b1-planet,
+  .b1-safari {
+    width: 125px;
+    height: 125px;
+  }
+  
+  .b2,
+  .b2-planet,
+  .b2-safari {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .b3, 
+  .b3-planet, 
+  .b3-safari {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .b1::after,
+  .b2::after,
+  .b3::after,
+  .b1-planet::after,
+  .b2-planet::after,
+  .b3-planet::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .b2::after,
+  .b2-planet::after {
+    top: 70px;
+    left: 70px;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .b3::after,
+  .b3-planet::after {
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .hooks-filter {
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    filter: url('#goo');
+    /* overflow: hidden; */
+  }
+  

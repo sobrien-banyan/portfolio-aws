@@ -1,0 +1,334 @@
+
+:root {
+  --black: #161616;
+  --white: #dcdcdc;
+  --blue: #6531c5;
+  --planet: #425b9a;
+  --codeBlack: #212529;
+}
+
+.bg-black {
+  background: var(--black);
+}
+.bg-background {
+  background: var(--white);
+}
+.white {
+  color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.code-black {
+  color: var(--codeBlack);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-button {
+  z-index: 111;
+  position: fixed;
+  right: 16px;
+  top: 12px;
+}
+
+@media (min-width: 740px) {
+  .nav-button {
+    display: none;
+  }
+  .small-nav-hide {
+    display: none;
+  }
+}
+
+.nav-button-rotate {
+  transform: rotate(180deg);
+  transition-duration: 1500ms;
+}
+.large-navbar {
+  z-index: 110 !important;
+}
+
+@media (max-width: 740px) {
+  .large-navbar {
+    display: none;
+  }
+}
+
+.top-large-nav-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gitHub-Contributions {
+  position: relative;
+  z-index: 10;
+}
+
+.small-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 110;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.margin-top-60 {
+  margin-top: 60px;
+}
+
+.App {
+  width: 100%; 
+}
+
+.App main {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.header-web-text {
+  font-size: calc(8px + 6vmin);
+  padding-top: 8vh;
+}
+
+.code-text {
+  font-size: 58vw;
+  position: fixed;
+  z-index: 1;
+}
+
+.container-header-image-person {
+  position: absolute;
+  bottom: 6vh;
+  left: 5vw;
+  z-index: 99;
+}
+
+.icon-container {
+  visibility: visible;
+  max-width: 280px;
+  position: relative;
+  bottom: -8px;
+}
+
+svg {
+  overflow: visible !important;
+}
+
+.links-small-screen {
+  width: 100%;
+  padding-top: 64px;
+  display: none;
+  justify-content: space-evenly;
+}
+.link-icon {
+  width: 19.999%;
+  height: auto;
+}
+
+.about-section {
+  position: relative;
+}
+
+.goo-container {
+  height: 100%;
+  width: 100%;
+}
+
+.videoRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;   
+  position: relative;
+  z-index: 10;
+}
+
+.codeImage {
+  width: 100%;
+}
+
+#apps img {
+  width: 100%;
+}
+
+.app-row-end {
+  display: flex;
+  justify-content: flex-end !important;
+}
+
+@media (max-width: 650px) {
+ .goo-container {
+   display: none;
+ }
+
+.App-logo {
+  display: none;
+}
+.container-header-image-person {
+  height: 131px;
+  bottom: 8vh;
+  }
+ .icon-container {
+   visibility: hidden;
+ }
+  .links-small-screen {
+    display: flex;
+  }
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlide {
+  width: fit-content;
+  height: 100%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 65%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 14px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 16px;
+  color: white;
+  margin: 0 15px;
+}
+
+.slide-bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Six columns side by side */
+.column {
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.demo:hover {
+  opacity: 1;
+}
+.demo-active {
+  opacity: 1
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#snake-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snake-start-btn {
+  width: 400px;
+}
+
+.score-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
